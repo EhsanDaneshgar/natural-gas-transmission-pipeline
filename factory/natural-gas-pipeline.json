@@ -1,0 +1,9 @@
+{
+	"name": "natural-gas-pipeline",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6e62b0af-2dfd-497f-8e3b-f659a1c43232",
+		"tenantId": "f52f2183-9f67-4ad2-b656-6f754fe196cb"
+	}
+}
