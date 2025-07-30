@@ -13,12 +13,18 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "select1"
+				}
+			],
 			"scriptLines": [
 				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     limit: 100,",
-				"     ignoreNoFilesFound: false) ~> GasFlowExcelSource"
+				"     ignoreNoFilesFound: false) ~> GasFlowExcelSource",
+				"GasFlowExcelSource select(skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1"
 			]
 		}
 	}
