@@ -8,6 +8,7 @@
 		"annotations": [],
 		"type": "Excel",
 		"typeProperties": {
+			"sheetName": "GTF_data",
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "Export_GTF_IEA_202505.xlsx",
