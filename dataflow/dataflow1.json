@@ -23,11 +23,7 @@
 				"     validateSchema: false,",
 				"     limit: 100,",
 				"     ignoreNoFilesFound: false) ~> GasFlowExcelSource",
-				"GasFlowExcelSource select(mapColumn(",
-				"          each(match(Entry),",
-				"               EntryCountry = $$)",
-				"     ),",
-				"     skipDuplicateMapInputs: true,",
+				"GasFlowExcelSource select(skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> RenamingHeaders"
 			]
 		}
