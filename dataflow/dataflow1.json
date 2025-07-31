@@ -15,7 +15,7 @@
 			"sinks": [],
 			"transformations": [
 				{
-					"name": "RenamingHeaders"
+					"name": "select1"
 				}
 			],
 			"scriptLines": [
@@ -24,7 +24,7 @@
 				"     limit: 100,",
 				"     ignoreNoFilesFound: false) ~> GasFlowExcelSource",
 				"GasFlowExcelSource select(skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> RenamingHeaders"
+				"     skipDuplicateMapOutputs: true) ~> select1"
 			]
 		}
 	}
