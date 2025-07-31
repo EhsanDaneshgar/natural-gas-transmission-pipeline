@@ -1,0 +1,838 @@
+{
+	"name": "Excel2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "GTF_data",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Export_GTF_IEA_202505.xlsx",
+				"fileSystem": "raw-data"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "Borderpoint",
+				"type": "String"
+			},
+			{
+				"name": "Exit",
+				"type": "String"
+			},
+			{
+				"name": "Entry",
+				"type": "String"
+			},
+			{
+				"name": "MAXFLOW (Mm3/h)",
+				"type": "String"
+			},
+			{
+				"name": "Oct-08",
+				"type": "String"
+			},
+			{
+				"name": "Nov-08",
+				"type": "String"
+			},
+			{
+				"name": "Dec-08",
+				"type": "String"
+			},
+			{
+				"name": "Jan-09",
+				"type": "String"
+			},
+			{
+				"name": "Feb-09",
+				"type": "String"
+			},
+			{
+				"name": "Mar-09",
+				"type": "String"
+			},
+			{
+				"name": "Apr-09",
+				"type": "String"
+			},
+			{
+				"name": "May-09",
+				"type": "String"
+			},
+			{
+				"name": "Jun-09",
+				"type": "String"
+			},
+			{
+				"name": "Jul-09",
+				"type": "String"
+			},
+			{
+				"name": "Aug-09",
+				"type": "String"
+			},
+			{
+				"name": "Sep-09",
+				"type": "String"
+			},
+			{
+				"name": "Oct-09",
+				"type": "String"
+			},
+			{
+				"name": "Nov-09",
+				"type": "String"
+			},
+			{
+				"name": "Dec-09",
+				"type": "String"
+			},
+			{
+				"name": "Jan-10",
+				"type": "String"
+			},
+			{
+				"name": "Feb-10",
+				"type": "String"
+			},
+			{
+				"name": "Mar-10",
+				"type": "String"
+			},
+			{
+				"name": "Apr-10",
+				"type": "String"
+			},
+			{
+				"name": "May-10",
+				"type": "String"
+			},
+			{
+				"name": "Jun-10",
+				"type": "String"
+			},
+			{
+				"name": "Jul-10",
+				"type": "String"
+			},
+			{
+				"name": "Aug-10",
+				"type": "String"
+			},
+			{
+				"name": "Sep-10",
+				"type": "String"
+			},
+			{
+				"name": "Oct-10",
+				"type": "String"
+			},
+			{
+				"name": "Nov-10",
+				"type": "String"
+			},
+			{
+				"name": "Dec-10",
+				"type": "String"
+			},
+			{
+				"name": "Jan-11",
+				"type": "String"
+			},
+			{
+				"name": "Feb-11",
+				"type": "String"
+			},
+			{
+				"name": "Mar-11",
+				"type": "String"
+			},
+			{
+				"name": "Apr-11",
+				"type": "String"
+			},
+			{
+				"name": "May-11",
+				"type": "String"
+			},
+			{
+				"name": "Jun-11",
+				"type": "String"
+			},
+			{
+				"name": "Jul-11",
+				"type": "String"
+			},
+			{
+				"name": "Aug-11",
+				"type": "String"
+			},
+			{
+				"name": "Sep-11",
+				"type": "String"
+			},
+			{
+				"name": "Oct-11",
+				"type": "String"
+			},
+			{
+				"name": "Nov-11",
+				"type": "String"
+			},
+			{
+				"name": "Dec-11",
+				"type": "String"
+			},
+			{
+				"name": "Jan-12",
+				"type": "String"
+			},
+			{
+				"name": "Feb-12",
+				"type": "String"
+			},
+			{
+				"name": "Mar-12",
+				"type": "String"
+			},
+			{
+				"name": "Apr-12",
+				"type": "String"
+			},
+			{
+				"name": "May-12",
+				"type": "String"
+			},
+			{
+				"name": "Jun-12",
+				"type": "String"
+			},
+			{
+				"name": "Jul-12",
+				"type": "String"
+			},
+			{
+				"name": "Aug-12",
+				"type": "String"
+			},
+			{
+				"name": "Sep-12",
+				"type": "String"
+			},
+			{
+				"name": "Oct-12",
+				"type": "String"
+			},
+			{
+				"name": "Nov-12",
+				"type": "String"
+			},
+			{
+				"name": "Dec-12",
+				"type": "String"
+			},
+			{
+				"name": "Jan-13",
+				"type": "String"
+			},
+			{
+				"name": "Feb-13",
+				"type": "String"
+			},
+			{
+				"name": "Mar-13",
+				"type": "String"
+			},
+			{
+				"name": "Apr-13",
+				"type": "String"
+			},
+			{
+				"name": "May-13",
+				"type": "String"
+			},
+			{
+				"name": "Jun-13",
+				"type": "String"
+			},
+			{
+				"name": "Jul-13",
+				"type": "String"
+			},
+			{
+				"name": "Aug-13",
+				"type": "String"
+			},
+			{
+				"name": "Sep-13",
+				"type": "String"
+			},
+			{
+				"name": "Oct-13",
+				"type": "String"
+			},
+			{
+				"name": "Nov-13",
+				"type": "String"
+			},
+			{
+				"name": "Dec-13",
+				"type": "String"
+			},
+			{
+				"name": "Jan-14",
+				"type": "String"
+			},
+			{
+				"name": "Feb-14",
+				"type": "String"
+			},
+			{
+				"name": "Mar-14",
+				"type": "String"
+			},
+			{
+				"name": "Apr-14",
+				"type": "String"
+			},
+			{
+				"name": "May-14",
+				"type": "String"
+			},
+			{
+				"name": "Jun-14",
+				"type": "String"
+			},
+			{
+				"name": "Jul-14",
+				"type": "String"
+			},
+			{
+				"name": "Aug-14",
+				"type": "String"
+			},
+			{
+				"name": "Sep-14",
+				"type": "String"
+			},
+			{
+				"name": "Oct-14",
+				"type": "String"
+			},
+			{
+				"name": "Nov-14",
+				"type": "String"
+			},
+			{
+				"name": "Dec-14",
+				"type": "String"
+			},
+			{
+				"name": "Jan-15",
+				"type": "String"
+			},
+			{
+				"name": "Feb-15",
+				"type": "String"
+			},
+			{
+				"name": "Mar-15",
+				"type": "String"
+			},
+			{
+				"name": "Apr-15",
+				"type": "String"
+			},
+			{
+				"name": "May-15",
+				"type": "String"
+			},
+			{
+				"name": "Jun-15",
+				"type": "String"
+			},
+			{
+				"name": "Jul-15",
+				"type": "String"
+			},
+			{
+				"name": "Aug-15",
+				"type": "String"
+			},
+			{
+				"name": "Sep-15",
+				"type": "String"
+			},
+			{
+				"name": "Oct-15",
+				"type": "String"
+			},
+			{
+				"name": "Nov-15",
+				"type": "String"
+			},
+			{
+				"name": "Dec-15",
+				"type": "String"
+			},
+			{
+				"name": "Jan-16",
+				"type": "String"
+			},
+			{
+				"name": "Feb-16",
+				"type": "String"
+			},
+			{
+				"name": "Mar-16",
+				"type": "String"
+			},
+			{
+				"name": "Apr-16",
+				"type": "String"
+			},
+			{
+				"name": "May-16",
+				"type": "String"
+			},
+			{
+				"name": "Jun-16",
+				"type": "String"
+			},
+			{
+				"name": "Jul-16",
+				"type": "String"
+			},
+			{
+				"name": "Aug-16",
+				"type": "String"
+			},
+			{
+				"name": "Sep-16",
+				"type": "String"
+			},
+			{
+				"name": "Oct-16",
+				"type": "String"
+			},
+			{
+				"name": "Nov-16",
+				"type": "String"
+			},
+			{
+				"name": "Dec-16",
+				"type": "String"
+			},
+			{
+				"name": "Jan-17",
+				"type": "String"
+			},
+			{
+				"name": "Feb-17",
+				"type": "String"
+			},
+			{
+				"name": "Mar-17",
+				"type": "String"
+			},
+			{
+				"name": "Apr-17",
+				"type": "String"
+			},
+			{
+				"name": "May-17",
+				"type": "String"
+			},
+			{
+				"name": "Jun-17",
+				"type": "String"
+			},
+			{
+				"name": "Jul-17",
+				"type": "String"
+			},
+			{
+				"name": "Aug-17",
+				"type": "String"
+			},
+			{
+				"name": "Sep-17",
+				"type": "String"
+			},
+			{
+				"name": "Oct-17",
+				"type": "String"
+			},
+			{
+				"name": "Nov-17",
+				"type": "String"
+			},
+			{
+				"name": "Dec-17",
+				"type": "String"
+			},
+			{
+				"name": "Jan-18",
+				"type": "String"
+			},
+			{
+				"name": "Feb-18",
+				"type": "String"
+			},
+			{
+				"name": "Mar-18",
+				"type": "String"
+			},
+			{
+				"name": "Apr-18",
+				"type": "String"
+			},
+			{
+				"name": "May-18",
+				"type": "String"
+			},
+			{
+				"name": "Jun-18",
+				"type": "String"
+			},
+			{
+				"name": "Jul-18",
+				"type": "String"
+			},
+			{
+				"name": "Aug-18",
+				"type": "String"
+			},
+			{
+				"name": "Sep-18",
+				"type": "String"
+			},
+			{
+				"name": "Oct-18",
+				"type": "String"
+			},
+			{
+				"name": "Nov-18",
+				"type": "String"
+			},
+			{
+				"name": "Dec-18",
+				"type": "String"
+			},
+			{
+				"name": "Jan-19",
+				"type": "String"
+			},
+			{
+				"name": "Feb-19",
+				"type": "String"
+			},
+			{
+				"name": "Mar-19",
+				"type": "String"
+			},
+			{
+				"name": "Apr-19",
+				"type": "String"
+			},
+			{
+				"name": "May-19",
+				"type": "String"
+			},
+			{
+				"name": "Jun-19",
+				"type": "String"
+			},
+			{
+				"name": "Jul-19",
+				"type": "String"
+			},
+			{
+				"name": "Aug-19",
+				"type": "String"
+			},
+			{
+				"name": "Sep-19",
+				"type": "String"
+			},
+			{
+				"name": "Oct-19",
+				"type": "String"
+			},
+			{
+				"name": "Nov-19",
+				"type": "String"
+			},
+			{
+				"name": "Dec-19",
+				"type": "String"
+			},
+			{
+				"name": "Jan-20",
+				"type": "String"
+			},
+			{
+				"name": "Feb-20",
+				"type": "String"
+			},
+			{
+				"name": "Mar-20",
+				"type": "String"
+			},
+			{
+				"name": "Apr-20",
+				"type": "String"
+			},
+			{
+				"name": "May-20",
+				"type": "String"
+			},
+			{
+				"name": "Jun-20",
+				"type": "String"
+			},
+			{
+				"name": "Jul-20",
+				"type": "String"
+			},
+			{
+				"name": "Aug-20",
+				"type": "String"
+			},
+			{
+				"name": "Sep-20",
+				"type": "String"
+			},
+			{
+				"name": "Oct-20",
+				"type": "String"
+			},
+			{
+				"name": "Nov-20",
+				"type": "String"
+			},
+			{
+				"name": "Dec-20",
+				"type": "String"
+			},
+			{
+				"name": "Jan-21",
+				"type": "String"
+			},
+			{
+				"name": "Feb-21",
+				"type": "String"
+			},
+			{
+				"name": "Mar-21",
+				"type": "String"
+			},
+			{
+				"name": "Apr-21",
+				"type": "String"
+			},
+			{
+				"name": "May-21",
+				"type": "String"
+			},
+			{
+				"name": "Jun-21",
+				"type": "String"
+			},
+			{
+				"name": "Jul-21",
+				"type": "String"
+			},
+			{
+				"name": "Aug-21",
+				"type": "String"
+			},
+			{
+				"name": "Sep-21",
+				"type": "String"
+			},
+			{
+				"name": "Oct-21",
+				"type": "String"
+			},
+			{
+				"name": "Nov-21",
+				"type": "String"
+			},
+			{
+				"name": "Dec-21",
+				"type": "String"
+			},
+			{
+				"name": "Jan-22",
+				"type": "String"
+			},
+			{
+				"name": "Feb-22",
+				"type": "String"
+			},
+			{
+				"name": "Mar-22",
+				"type": "String"
+			},
+			{
+				"name": "Apr-22",
+				"type": "String"
+			},
+			{
+				"name": "May-22",
+				"type": "String"
+			},
+			{
+				"name": "Jun-22",
+				"type": "String"
+			},
+			{
+				"name": "Jul-22",
+				"type": "String"
+			},
+			{
+				"name": "Aug-22",
+				"type": "String"
+			},
+			{
+				"name": "Sep-22",
+				"type": "String"
+			},
+			{
+				"name": "Oct-22",
+				"type": "String"
+			},
+			{
+				"name": "Nov-22",
+				"type": "String"
+			},
+			{
+				"name": "Dec-22",
+				"type": "String"
+			},
+			{
+				"name": "Jan-23",
+				"type": "String"
+			},
+			{
+				"name": "Feb-23",
+				"type": "String"
+			},
+			{
+				"name": "Mar-23",
+				"type": "String"
+			},
+			{
+				"name": "Apr-23",
+				"type": "String"
+			},
+			{
+				"name": "May-23",
+				"type": "String"
+			},
+			{
+				"name": "Jun-23",
+				"type": "String"
+			},
+			{
+				"name": "Jul-23",
+				"type": "String"
+			},
+			{
+				"name": "Aug-23",
+				"type": "String"
+			},
+			{
+				"name": "Sep-23",
+				"type": "String"
+			},
+			{
+				"name": "Oct-23",
+				"type": "String"
+			},
+			{
+				"name": "Nov-23",
+				"type": "String"
+			},
+			{
+				"name": "Dec-23",
+				"type": "String"
+			},
+			{
+				"name": "Jan-24",
+				"type": "String"
+			},
+			{
+				"name": "Feb-24",
+				"type": "String"
+			},
+			{
+				"name": "Mar-24",
+				"type": "String"
+			},
+			{
+				"name": "Apr-24",
+				"type": "String"
+			},
+			{
+				"name": "May-24",
+				"type": "String"
+			},
+			{
+				"name": "Jun-24",
+				"type": "String"
+			},
+			{
+				"name": "Jul-24",
+				"type": "String"
+			},
+			{
+				"name": "Aug-24",
+				"type": "String"
+			},
+			{
+				"name": "Sep-24",
+				"type": "String"
+			},
+			{
+				"name": "Oct-24",
+				"type": "String"
+			},
+			{
+				"name": "Nov-24",
+				"type": "String"
+			},
+			{
+				"name": "Dec-24",
+				"type": "String"
+			},
+			{
+				"name": "Jan-25",
+				"type": "String"
+			},
+			{
+				"name": "Feb-25",
+				"type": "String"
+			},
+			{
+				"name": "Mar-25",
+				"type": "String"
+			},
+			{
+				"name": "Apr-25",
+				"type": "String"
+			},
+			{
+				"name": "May-25",
+				"type": "String"
+			}
+		]
+	}
+}
