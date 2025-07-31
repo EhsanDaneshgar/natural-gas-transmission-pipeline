@@ -25,7 +25,7 @@
 				"     ignoreNoFilesFound: false) ~> GasFlowExcelSource",
 				"GasFlowExcelSource select(mapColumn(",
 				"          each(match(Entry),",
-				"               ERROR_FUNCTION('Entry Country') = $$)",
+				"               EntryCountry = $$)",
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> RenamingHeaders"
