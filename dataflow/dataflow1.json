@@ -15,7 +15,7 @@
 			"sinks": [],
 			"transformations": [
 				{
-					"name": "select1"
+					"name": "RenamingHeaders"
 				}
 			],
 			"scriptLines": [
@@ -23,8 +23,12 @@
 				"     validateSchema: false,",
 				"     limit: 100,",
 				"     ignoreNoFilesFound: false) ~> GasFlowExcelSource",
-				"GasFlowExcelSource select(skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> select1"
+				"GasFlowExcelSource select(mapColumn(",
+				"          each(match(Entry),",
+				"               ERROR_FUNCTION('Entry Country') = $$)",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> RenamingHeaders"
 			]
 		}
 	}
