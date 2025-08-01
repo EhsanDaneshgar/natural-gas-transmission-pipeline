@@ -233,7 +233,8 @@
 				"          each(match(/* All input columns */true()),",
 				"               /* Input name */$$ = $$),",
 				"          {Exit Country} = Exit,",
-				"          {Entry Country} = Entry",
+				"          {Entry Country} = Entry,",
+				"          {Max Flow Rate (Mm3/h)} = {MAXFLOW (Mm3/h)}",
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> select1"
