@@ -253,7 +253,7 @@
 				"          {Max Flow Rate (Mm3/h)},",
 				"          Borderpoint),",
 				"     lateral: false,",
-				"     ignoreNullPivots: false) ~> unpivot1"
+				"     ignoreNullPivots: true) ~> unpivot1"
 			]
 		}
 	}
