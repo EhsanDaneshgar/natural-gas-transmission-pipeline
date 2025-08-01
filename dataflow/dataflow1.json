@@ -249,7 +249,7 @@
 				"          Month as string",
 				"     ),",
 				"     lateral: false,",
-				"     ignoreNullPivots: false) ~> unpivotmonths",
+				"     ignoreNullPivots: true) ~> unpivotmonths",
 				"select1 select(mapColumn(",
 				"          each(match(/* All input columns */ true()),",
 				"               /* Input name */ $$ = $$)",
