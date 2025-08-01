@@ -20,6 +20,9 @@
 				},
 				{
 					"name": "unpivotmonths"
+				},
+				{
+					"name": "selectmonthsonly"
 				}
 			],
 			"scriptLines": [
@@ -242,19 +245,28 @@
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> select1",
-				"select1 unpivot(output(",
+				"selectmonthsonly unpivot(output(",
 				"          Month as string,",
 				"          {Oct-08} as string,",
 				"          {Nov-08} as string,",
 				"          {Dec-08} as string,",
-				"          {Nov-08} as string",
+				"          {Jan-09} as string,",
+				"          {Feb-09} as string,",
+				"          {Mar-09} as string,",
+				"          {Apr-09} as string",
 				"     ),",
 				"     ungroupBy({Exit Country},",
 				"          {Entry Country},",
 				"          {Max Flow Rate (Mm3/h)},",
 				"          Borderpoint),",
 				"     lateral: false,",
-				"     ignoreNullPivots: false) ~> unpivotmonths"
+				"     ignoreNullPivots: false) ~> unpivotmonths",
+				"select1 select(mapColumn(",
+				"          each(match(/* All input columns */ true()),",
+				"               /* Input name */ $$ = $$)",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> selectmonthsonly"
 			]
 		}
 	}
