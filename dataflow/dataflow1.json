@@ -15,7 +15,8 @@
 			"sinks": [],
 			"transformations": [
 				{
-					"name": "select1"
+					"name": "select1",
+					"description": "Renaming the columns headers"
 				}
 			],
 			"scriptLines": [
@@ -230,11 +231,11 @@
 				"     limit: 100,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 select(mapColumn(",
-				"          each(match(/* All input columns */true()),",
-				"               /* Input name */$$ = $$),",
 				"          {Exit Country} = Exit,",
 				"          {Entry Country} = Entry,",
-				"          {Max Flow Rate (Mm3/h)} = {MAXFLOW (Mm3/h)}",
+				"          {Max Flow Rate (Mm3/h)} = {MAXFLOW (Mm3/h)},",
+				"          each(match(/* All input columns */true()),",
+				"               /* Input name */$$ = $$)",
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> select1"
