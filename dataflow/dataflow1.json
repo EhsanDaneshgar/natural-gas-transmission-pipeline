@@ -243,17 +243,14 @@
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> select1",
 				"select1 unpivot(output(",
-				"          Month as string,",
-				"          {Oct-08} as string,",
-				"          {Nov-08} as string,",
-				"          {Dec-08} as string",
+				"          Month as string",
 				"     ),",
 				"     ungroupBy({Exit Country},",
 				"          {Entry Country},",
 				"          {Max Flow Rate (Mm3/h)},",
 				"          Borderpoint),",
 				"     lateral: false,",
-				"     ignoreNullPivots: true) ~> unpivot1"
+				"     ignoreNullPivots: false) ~> unpivot1"
 			]
 		}
 	}
