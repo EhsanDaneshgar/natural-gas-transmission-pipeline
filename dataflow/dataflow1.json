@@ -17,6 +17,9 @@
 				{
 					"name": "select1",
 					"description": "Renaming the columns headers"
+				},
+				{
+					"name": "unpivotmonths"
 				}
 			],
 			"scriptLines": [
@@ -238,7 +241,20 @@
 				"               /* Input name */$$ = $$)",
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> select1"
+				"     skipDuplicateMapOutputs: true) ~> select1",
+				"select1 unpivot(output(",
+				"          Month as string,",
+				"          {Oct-08} as string,",
+				"          {Nov-08} as string,",
+				"          {Dec-08} as string,",
+				"          {Nov-08} as string",
+				"     ),",
+				"     ungroupBy({Exit Country},",
+				"          {Entry Country},",
+				"          {Max Flow Rate (Mm3/h)},",
+				"          Borderpoint),",
+				"     lateral: false,",
+				"     ignoreNullPivots: false) ~> unpivotmonths"
 			]
 		}
 	}
