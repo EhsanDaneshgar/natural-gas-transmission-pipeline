@@ -19,9 +19,6 @@
 					"description": "Renaming the columns headers"
 				},
 				{
-					"name": "unpivotmonths"
-				},
-				{
 					"name": "selectmonthsonly"
 				}
 			],
@@ -245,11 +242,6 @@
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> select1",
-				"selectmonthsonly unpivot(output(",
-				"          Month as string",
-				"     ),",
-				"     lateral: false,",
-				"     ignoreNullPivots: true) ~> unpivotmonths",
 				"select1 select(mapColumn(",
 				"          each(match(/* All input columns */ true()),",
 				"               /* Input name */ $$ = $$)",
