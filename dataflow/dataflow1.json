@@ -250,7 +250,7 @@
 				"          {Jan-09} as decimal(10,0),",
 				"          {Feb-09} as decimal(10,0),",
 				"          {Mar-09} as decimal(10,0),",
-				"          {Apr-09} as string,",
+				"          {Apr-09} as decimal(10,0),",
 				"          {May-09} as string,",
 				"          {Jun-09} as string,",
 				"          {Jul-09} as string,",
