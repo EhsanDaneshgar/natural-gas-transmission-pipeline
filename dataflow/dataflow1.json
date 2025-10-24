@@ -294,7 +294,7 @@
 				"          {Sep-12} as decimal(10,0),",
 				"          {Oct-12} as decimal(10,0),",
 				"          {Nov-12} as decimal(10,0),",
-				"          {Dec-12} as string,",
+				"          {Dec-12} as decimal(10,0),",
 				"          {Jan-13} as string,",
 				"          {Feb-13} as string,",
 				"          {Mar-13} as string,",
